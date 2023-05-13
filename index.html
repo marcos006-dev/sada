@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logo_ipf.ico">
+    <title>SADA</title>
+    <!-- Custom CSS -->
+    <link href="/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/assets/css/style.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+      <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+      </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full" data-boxed-layout="full">
+      <!-- ============================================================== -->
+      <!-- Topbar header - style you can find in pages.scss -->
+      <!-- ============================================================== -->
+      <header class="topbar" data-navbarbg="skin6">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+          <div class="navbar-header" data-logobg="skin5">
+            <!-- This is for the sidebar toggle which is visible on mobile only -->
+            <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+              <i class="ti-menu ti-close"></i>
+            </a>
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-brand">
+              <a href="/" class="logo">
+                <!-- Logo icon -->
+                <b class="logo-icon">
+                  <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                  <!-- Dark Logo icon -->
+                  <img src="/assets/images/logo_ipf.png" width="30" height="30" alt="homepage" class="dark-logo">
+                  <!-- Light Logo icon -->
+                  <img src="/assets/images/logo_ipf.png" width="30" height="30" alt="homepage" class="light-logo">
+                </b>
+                <!--End Logo icon -->
+                <!-- Logo text -->
+                <span class="logo-text">
+                  <!-- dark Logo text -->
+                  <img src="/assets/images/logo_ipf.png" width="30" height="30" alt="homepage" class="dark-logo">
+                  <!-- Light Logo text -->
+                  <span class="text-white">SADA</span>
+                </span>
+              </a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Toggle which is visible on mobile only -->
+            <!-- ============================================================== -->
+            <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="ti-more"></i>
+            </a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+            <ul class="navbar-nav float-right"></ul>
+          </div>
+        </nav>
+      </header>
+      <!-- ============================================================== -->
+      <!-- End Topbar header -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false">
+                  <i class="mdi mdi-home"></i>
+                  <span class="hide-menu">Inicio</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false">
+                  <i class="mdi mdi-google-maps"></i>
+                  <span class="hide-menu">Mapa</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false">
+                  <i class="mdi mdi-database"></i>
+                  <span class="hide-menu">Datos</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false">
+                  <i class="mdi mdi-border-none"></i>
+                  <span class="hide-menu">API</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false" data-toggle="collapse" data-target="#configSubMenu">
+                  <i class="mdi mdi-wrench"></i>
+                  <span class="hide-menu">Configuración</span>
+                  <span class="sidebar-arrow">
+                    <i class="mdi mdi-chevron-down"></i>
+                  </span>
+                </a>
+                <ul class="sidebar-submenu collapse" id="configSubMenu">
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Estaciones</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Sensores</a>
+                  </li>
+                  <!-- <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Opción 3</a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/" aria-expanded="false">
+                  <i class="mdi mdi-login"></i>
+                  <span class="hide-menu">Iniciar Sesión</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- ============================================================== -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Page wrapper  -->
+      <!-- ============================================================== -->
+      <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 align-self-center">
+              <h4 class="page-title text-center">Clima Hoy</h4>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+          
+  <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z24irEp" prefix="r0" component-url="/sada/_astro/Sensores.6fdf5763.js" component-export="Sensores" renderer-url="/sada/_astro/client.5dccb351.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Sensores&quot;,&quot;value&quot;:true}" await-children=""><div class="row"><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><div class="d-flex align-items-center flex-row m-t-30"><div class="display-5 text-info"><i class="wi wi-day-showers"></i><span>25<sup>°</sup></span></div><div class="m-l-10"><h3 class="m-b-0">sábado</h3><small>Formosa, Argentina</small></div></div><table class="table no-border mini-table m-t-20"><tbody><tr><td class="text-muted">Dirección del Norte</td><td class="font-medium">Norte</td></tr><tr><td class="text-muted">Humedad</td><td class="font-medium">83%</td></tr></tbody></table><ul class="row list-style-none text-center m-t-30"><li class="col-3"><h4 class="text-info"><i class="wi wi-day-sunny"></i></h4><span class="d-block text-muted">09:30</span><h3 class="m-t-5">20<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-cloudy"></i></h4><span class="d-block text-muted">11:30</span><h3 class="m-t-5">22<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-hail"></i></h4><span class="d-block text-muted">13:30</span><h3 class="m-t-5">30<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-sprinkle"></i></h4><span class="d-block text-muted">15:30</span><h3 class="m-t-5">28<sup>°</sup></h3></li></ul></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><div class="d-flex align-items-center flex-row m-t-30"><div class="display-5 text-info"><i class="wi wi-day-showers"></i><span>25<sup>°</sup></span></div><div class="m-l-10"><h3 class="m-b-0">domingo</h3><small>Formosa, Argentina</small></div></div><table class="table no-border mini-table m-t-20"><tbody><tr><td class="text-muted">Dirección del Norte</td><td class="font-medium">Norte</td></tr><tr><td class="text-muted">Humedad</td><td class="font-medium">83%</td></tr></tbody></table><ul class="row list-style-none text-center m-t-30"><li class="col-3"><h4 class="text-info"><i class="wi wi-day-sunny"></i></h4><span class="d-block text-muted">09:30</span><h3 class="m-t-5">20<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-cloudy"></i></h4><span class="d-block text-muted">11:30</span><h3 class="m-t-5">22<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-hail"></i></h4><span class="d-block text-muted">13:30</span><h3 class="m-t-5">30<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-sprinkle"></i></h4><span class="d-block text-muted">15:30</span><h3 class="m-t-5">28<sup>°</sup></h3></li></ul></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><div class="d-flex align-items-center flex-row m-t-30"><div class="display-5 text-info"><i class="wi wi-day-showers"></i><span>25<sup>°</sup></span></div><div class="m-l-10"><h3 class="m-b-0">lunes</h3><small>Formosa, Argentina</small></div></div><table class="table no-border mini-table m-t-20"><tbody><tr><td class="text-muted">Dirección del Norte</td><td class="font-medium">Norte</td></tr><tr><td class="text-muted">Humedad</td><td class="font-medium">83%</td></tr></tbody></table><ul class="row list-style-none text-center m-t-30"><li class="col-3"><h4 class="text-info"><i class="wi wi-day-sunny"></i></h4><span class="d-block text-muted">09:30</span><h3 class="m-t-5">20<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-cloudy"></i></h4><span class="d-block text-muted">11:30</span><h3 class="m-t-5">22<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-hail"></i></h4><span class="d-block text-muted">13:30</span><h3 class="m-t-5">30<sup>°</sup></h3></li><li class="col-3"><h4 class="text-info"><i class="wi wi-day-sprinkle"></i></h4><span class="d-block text-muted">15:30</span><h3 class="m-t-5">28<sup>°</sup></h3></li></ul></div></div></div></div><h4 class="text-center">Ultima Actualización: <!-- -->13/5/2023<!-- -->:<!-- -->19:53</h4><div class="row"><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Temperatura</b></h5><h3 class="font-light text-center">26.8</h3><div class="m-t-20 text-center"></div></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Humedad</b></h5><h3 class="font-light text-center">50.3</h3><div class="m-t-20 text-center"></div></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Precipitaciones por minuto</b></h5><h3 class="font-light text-center">0</h3><div class="m-t-20 text-center"></div></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Precipitaciones acumuladas</b></h5><h3 class="font-light text-center">0</h3><div class="m-t-20 text-center"></div></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Dirección del viento	</b></h5><h3 class="font-light text-center">south</h3><div class="m-t-20 text-center"></div></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Fuerza del viento</b></h5><h3 class="font-light text-center">light-breeze</h3><div class="m-t-20 text-center"></div></div></div></div><div class="col-md-4 col-lg-4"><div class="card"><div class="card-body"><h5 class="card-title m-b-5 text-center"><b>Velocidad del viento</b></h5><h3 class="font-light text-center">6.44</h3><div class="m-t-20 text-center"></div></div></div></div></div></astro-island>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Container fluid  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer text-center">
+          Todos los derechos reservados 2023 &copy; IPF
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Page wrapper  -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/custom.min.js"></script>
+    <script src="/assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="/assets/js/waves.js"></script>
+    <!-- <script src="/assets/js/sidebarmenu.js" is:inline></script> -->
+    <script src="/assets/libs/chartist/dist/chartist.min.js"></script>
+    <!-- <script
+      src="/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"
+      is:inline
+    ></script> -->
+    <!-- <script src="/assets/js/pages/dashboards/dashboard1.js" is:inline></script> -->
+  </body></html>
