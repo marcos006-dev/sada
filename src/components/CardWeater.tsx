@@ -19,7 +19,7 @@ export const CardWeater = ({ day }) => {
           <table className="table no-border mini-table m-t-20">
             <tbody>
               <tr>
-                <td className="text-muted">Dirección del Norte</td>
+                <td className="text-muted">Dirección del Viento</td>
                 <td className="font-medium">Norte</td>
               </tr>
               <tr>

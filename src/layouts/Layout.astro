@@ -1,6 +1,8 @@
 ---
+import { getBaseDir } from '../utilities/herlper';
 // props
 const { title } = Astro.props;
+const baseDir = getBaseDir(Astro);
 ---
 
 <!DOCTYPE html>
@@ -17,13 +19,16 @@ const { title } = Astro.props;
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/images/logo_ipf.ico"
+      href=`${baseDir}assets/images/logo_ipf.ico`
     />
     <title>SADA</title>
     <!-- Custom CSS -->
-    <link href="/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
+    <link
+      href=`${baseDir}assets/libs/chartist/dist/chartist.min.css`
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link href="/assets/css/style.min.css" rel="stylesheet" />
+    <link href=`${baseDir}assets/css/style.min.css` rel="stylesheet" />
   </head>
 
   <body>
@@ -70,7 +75,7 @@ const { title } = Astro.props;
                   <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                   <!-- Dark Logo icon -->
                   <img
-                    src="/assets/images/logo_ipf.png"
+                    src=`${baseDir}assets/images/logo_ipf.png`
                     width="30"
                     height="30"
                     alt="homepage"
@@ -78,7 +83,7 @@ const { title } = Astro.props;
                   />
                   <!-- Light Logo icon -->
                   <img
-                    src="/assets/images/logo_ipf.png"
+                    src=`${baseDir}assets/images/logo_ipf.png`
                     width="30"
                     height="30"
                     alt="homepage"
@@ -90,7 +95,7 @@ const { title } = Astro.props;
                 <span class="logo-text">
                   <!-- dark Logo text -->
                   <img
-                    src="/assets/images/logo_ipf.png"
+                    src=`${baseDir}assets/images/logo_ipf.png`
                     width="30"
                     height="30"
                     alt="homepage"
@@ -274,21 +279,28 @@ const { title } = Astro.props;
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="/assets/libs/jquery/dist/jquery.min.js" is:inline></script>
+    <script src=`${baseDir}assets/libs/jquery/dist/jquery.min.js` is:inline
+    ></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="/assets/libs/popper.js/dist/umd/popper.min.js" is:inline
+    <script
+      src=`${baseDir}assets/libs/popper.js/dist/umd/popper.min.js`
+      is:inline
     ></script>
-    <script src="/assets/libs/bootstrap/dist/js/bootstrap.min.js" is:inline
+    <script
+      src=`${baseDir}assets/libs/bootstrap/dist/js/bootstrap.min.js`
+      is:inline
     ></script>
-    <script src="/assets/js/custom.min.js" is:inline></script>
-    <script src="/assets/extra-libs/sparkline/sparkline.js" is:inline></script>
-    <script src="/assets/js/waves.js" is:inline></script>
-    <!-- <script src="/assets/js/sidebarmenu.js" is:inline></script> -->
-    <script src="/assets/libs/chartist/dist/chartist.min.js" is:inline></script>
+    <script src=`${baseDir}assets/js/custom.min.js` is:inline></script>
+    <script src=`${baseDir}assets/extra-libs/sparkline/sparkline.js` is:inline
+    ></script>
+    <script src=`${baseDir}assets/js/waves.js` is:inline></script>
+    <!-- <script src="${baseDir}assets/js/sidebarmenu.js" is:inline></script> -->
+    <script src=`${baseDir}assets/libs/chartist/dist/chartist.min.js` is:inline
+    ></script>
     <!-- <script
-      src="/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"
+      src="${baseDir}assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"
       is:inline
     ></script> -->
-    <!-- <script src="/assets/js/pages/dashboards/dashboard1.js" is:inline></script> -->
+    <!-- <script src="${baseDir}assets/js/pages/dashboards/dashboard1.js" is:inline></script> -->
   </body>
 </html>
